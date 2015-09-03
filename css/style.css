@@ -11,7 +11,7 @@
 }
 
 .clearfix {
-  zoom: 1; /* ie 6/7 */
+  zoom: 1;  /*ie 6/7 */
 }
 
 /***** GENERIC STYLES *************/
@@ -21,7 +21,7 @@ body{
 	background: #d7eaf4;
 }
 p{
-	margin-top: 5%;
+	margin-top: 3%;
 }
 .wrapper{
 	width: 95%;
@@ -89,15 +89,15 @@ header h1{
 
 .arthistory{
 	background-color: white;
-	padding: 10% 5%;
+	padding: 5% 5%;
 }
 
 .cubism{
-	margin-top: 15%;
+	margin-top: 10%;
 	border-bottom: 2px solid #aba7d1;
 	padding-bottom: 10%;
 }
-.cubism_box {
+.cubism_box, .expressionism_box {
 	background-color: white;
 	padding: 5%;
 	margin-bottom: 10%;
@@ -110,14 +110,9 @@ header h1{
 	
 }
 .cubism_box img{
-	display: block;
+	/*display: inline-block;*/
 	margin: 0 auto;
-}
-
-.expressionism_box {
-	background-color: white;
-	padding: 5%;
-	margin-bottom: 10%;
+	width: 100%
 }
 
 .expressionism_box p{
@@ -129,6 +124,8 @@ header h1{
 .expressionism_box img{
 	display: block;
 	margin: 0 auto;
+	width: 100%;
+	box-shadow: 2px 4px 7px #c5c5c5;
 }
 
 .expressionism{
@@ -137,7 +134,7 @@ header h1{
 
 .related_articles{
 	background-color: #8781bd;
-	padding: 5%;
+	padding-bottom: 10%;
 	
 }
 
@@ -150,17 +147,18 @@ header h1{
 }
 
 .related_articles a{
-	display: block;
-	text-align: right;
+	float: right;
 }
 
 .related_articles article{
 	border-bottom: 2px solid #aba7d1;
+	padding: 10% 5%;
 }
 
 .related_articles h2{
 	border-bottom: 2px solid #aba7d1;
 	color: white;
+	padding: 10% 5%;
 }
 
 footer a{
@@ -187,4 +185,232 @@ footer {
 
 footer div{
 	margin: 10%;
+}
+
+.ladypainting{
+	display: none;
+}
+
+.largepainting{
+	display: none;
+}
+
+.related_articles img{
+	display: none;
+}
+
+
+
+@media screen and (min-width: 500px){
+	header h1{
+		margin: 10% 0px 10% 0px;
+		text-align: left;
+	}
+
+	.cubism{
+		border: none;
+	}
+
+	.ladypainting {
+		float: right;
+		display: block;
+		margin-left: 5%;
+	}
+
+	.arthistory p{
+		line-height: 150%;
+	}
+
+
+	.cubism_box{
+		float: right;
+		width: 40%;
+		margin: 0px 0px 0px 5%;
+	}
+
+	.cubism p, .expressionism p{
+		line-height: 150%;
+	}
+
+	.expressionism_box{
+		float: left;
+		width: 40%;
+		margin: 0px 5% 10% 0px;
+	}
+
+	.related_articles{
+		padding: 0px 5% 10% 5%;
+	}
+
+	.related_articles h2{
+		padding: 10% 0%;
+	}
+	
+	.related_articles img{
+		display: block;
+		float: left;
+		margin-right: 10%;
+	}
+
+	.related_articles article{
+		padding: 10% 0;
+	}
+
+	footer{
+		text-align: left;
+	}
+
+	.first_footer, .second_footer{
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+@media screen and (min-width: 800px){
+
+	header{
+		margin: 0;
+	}
+
+	header nav{
+		/*display: block;
+		padding: 15px 20px;*/
+		border-radius: 2px;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4f67b8+20,182498+100 */
+		background: #4f67b8; /* Old browsers */
+		background: -moz-linear-gradient(top,  #4f67b8 20%, #182498 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,#4f67b8), color-stop(100%,#182498)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #4f67b8 20%,#182498 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #4f67b8 20%,#182498 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #4f67b8 20%,#182498 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #4f67b8 20%,#182498 100%); /* W3C */
+		/*color: white;
+		text-decoration: none;
+		text-align: center;
+	 	text-shadow: 0px -1px 3px black;*/ 
+
+	}
+	header ul{
+		display: block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: right;
+	}
+
+	header li{
+		display: inline-block;
+		margin: 5px;
+	}
+
+	header h1{
+		margin: 5% 0 5% 5%;
+	}
+	.ladypainting{
+		display: none;
+	}
+
+	.largepainting{
+		display: block;
+		float: right;
+		margin-left: 5%
+	}
+
+	.column{
+		display: inline-block;
+		width: 47%;
+		vertical-align: top;
+	}
+
+	.expressionism_box{
+		margin: 5% 5% 5% 0;
+	}
+
+	.expressionism{
+		margin-left: 5%;
+	}
+
+	.cubism_box{
+		margin-top: 5%;
+	}
+
+	.related_articles{
+		background-color: white;
+/*		border: none;
+*/	}
+
+	.related_articles p{
+		color: black;
+		text-align: center;
+	}
+
+	.related_articles h3{
+		color: #8781bd;
+		text-align: center;
+	}
+
+	.related_articles h2{
+		color: #202d9d;
+		border: none;
+		padding: 5% 0 0 5%;
+	}
+
+	.related_articles article{
+		border: none;
+		width: 32%;
+		display: inline-block;
+		position: relative;
+	}
+
+	.related_articles img{
+		float: none;
+		margin: 0 auto;
+	}
+
+	.Article2 img.architectural{
+		display: none;
+	}
+
+	.Article3 img.girlpainting{
+		display: none;
+	}
+
+	.related_articles a{
+		float: none;
+		position: absolute;
+		right: 17%;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aaa5d0+0,7061b9+100 */
+		background: #aaa5d0; /* Old browsers */
+		background: -moz-linear-gradient(top,  #aaa5d0 0%, #7061b9 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#aaa5d0), color-stop(100%,#7061b9)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #aaa5d0 0%,#7061b9 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #aaa5d0 0%,#7061b9 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #aaa5d0 0%,#7061b9 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #aaa5d0 0%,#7061b9 100%); /* W3C */
+		border-radius: 5px;
+		padding: 5% 15%;
+		text-decoration: none;
+		color: white;
+
+	}
+
+	footer{
+		padding: 5%;
+		text-align: center;
+		background-color: #2b2a35;
+	}
+
+	footer li{
+		display: inline-block;
+		margin: 0;
+	}
+	.first_footer, .second_footer{
+		/*padding: 5%;*/
+		margin: 5%;
+		display: block;
+	}
+
+	footer a{
+		padding: 0 10%;
+	}
 }
